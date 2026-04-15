@@ -55,8 +55,6 @@ public class Coordinador {
 		this.conexionBD = conexionBD;
 	}
 
-	// Métodos para mostrar las vistas
-
 	public void mostrarVentanaPrincipal() {
 		if (ventanaPrincipal != null)
 			ventanaPrincipal.setVisible(true);
@@ -75,7 +73,6 @@ public class Coordinador {
 	}
 
 	public void mostrarVentanaConsultarLista() {
-		// Verificamos que tanto la ventana como el DAO existan antes de llamar
 		if (ventanaConsultarLista != null && personaDAO != null) {
 			ventanaConsultarLista.consultarListaPersonas();
 			ventanaConsultarLista.setVisible(true);
