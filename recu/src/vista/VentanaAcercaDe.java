@@ -78,7 +78,7 @@ public class VentanaAcercaDe extends JDialog implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnCerrar) {
-			dispose(); // Cierra y libera los recursos de la ventana
+			dispose(); 
 		}
 	}
 }
