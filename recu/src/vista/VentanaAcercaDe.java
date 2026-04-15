@@ -37,8 +37,6 @@ public class VentanaAcercaDe extends JDialog implements ActionListener {
 		JSeparator sep = new JSeparator();
 		sep.setBounds(20, 48, 380, 2);
 		getContentPane().add(sep);
-
-		// Información personalizada
 		
 		crearEtiqueta("Nombre:", "Miguel Angel Armero Muñoz", 62);
 		crearEtiqueta("Programa:", "ADSO - SENA", 97);
@@ -61,8 +59,6 @@ public class VentanaAcercaDe extends JDialog implements ActionListener {
 		btnCerrar.addActionListener(this);
 		getContentPane().add(btnCerrar);
 	}
-
-	// Método auxiliar para reducir líneas repetidas
 	
 	private void crearEtiqueta(String titulo, String valor, int y) {
 		JLabel et = new JLabel(titulo);
