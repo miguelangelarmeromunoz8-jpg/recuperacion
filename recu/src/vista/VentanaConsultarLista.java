@@ -60,7 +60,7 @@ public class VentanaConsultarLista extends JDialog implements ActionListener {
 		}
 
 		txtAreaResultado.setText(contenido.toString());
-		txtAreaResultado.setCaretPosition(0); // Sube el scroll al inicio automáticamente
+		txtAreaResultado.setCaretPosition(0); 
 	}
 
 	private void iniciarComponentes() {
