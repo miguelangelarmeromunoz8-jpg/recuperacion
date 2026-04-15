@@ -31,14 +31,12 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		setLocationRelativeTo(null); // Centra la ventana en pantalla
+		setLocationRelativeTo(null); 
 
 		iniciarComponentes();
 	}
 
 	private void iniciarComponentes() {
-
-		// Título y descripción de la ventana
 
 		JLabel lblTitulo = new JLabel("Sistema de calculo imc");
 		lblTitulo.setHorizontalAlignment(SwingConstants.CENTER);
@@ -56,8 +54,6 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 		txtrDescripcion.setWrapStyleWord(true);
 		txtrDescripcion.setBounds(21, 48, 410, 110);
 		contentPane.add(txtrDescripcion);
-
-		// Configuración de los botones del menú
 
 		btnRegistrar = new JButton("Registrar Persona");
 		btnRegistrar.setBounds(16, 175, 415, 29);
@@ -86,8 +82,6 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-
-		// Gestión de eventos para abrir las otras ventanas
 
 		if (e.getSource() == btnRegistrar) {
 			Coordinador.mostrarVentanaRegistro();
