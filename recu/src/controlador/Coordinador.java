@@ -89,8 +89,6 @@ public class Coordinador {
 			ventanaAcercaDe.setVisible(true);
 	}
 
-	// Lógica y validaciones (con protección contra nulos)
-
 	public boolean validarNombre(String valor) {
 		return procesos != null && procesos.validarNombre(valor);
 	}
@@ -106,8 +104,6 @@ public class Coordinador {
 	public String obtenerClasificacion(double imc) {
 		return procesos != null ? procesos.obtenerClasificacion(imc) : "Error";
 	}
-
-	// Métodos de Base de Datos
 
 	public String registrarPersona(PersonaDTO persona) {
 		return personaDAO != null ? personaDAO.registrarPersona(persona) : "error";
