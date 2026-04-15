@@ -44,7 +44,7 @@ public class Procesos {
 		}
 		try {
 			Double.parseDouble(texto);
-			return false; // Si se puede convertir a número, no es un nombre válido
+			return false; 
 		} catch (NumberFormatException e) {
 			return true;
 		}
