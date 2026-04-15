@@ -26,7 +26,7 @@ public class VentanaConsultaIndividual extends JDialog implements ActionListener
 	public VentanaConsultaIndividual(VentanaPrincipal ventanaPrincipal, boolean modal) {
 		super(ventanaPrincipal, modal);
 		setTitle("Consulta de Persona - IMC");
-		setSize(420, 400); // Ajustado un poco el alto para los botones
+		setSize(420, 400); 
 		getContentPane().setLayout(null);
 		setLocationRelativeTo(null);
 		iniciarComponentes();
@@ -38,8 +38,6 @@ public class VentanaConsultaIndividual extends JDialog implements ActionListener
 		lblConsultaDeUsuarios.setFont(new Font("Lucida Grande", Font.PLAIN, 20));
 		lblConsultaDeUsuarios.setBounds(17, 6, 390, 30);
 		getContentPane().add(lblConsultaDeUsuarios);
-
-		// Sección de búsqueda
 		
 		lblDocumento = new JLabel("Documento:");
 		lblDocumento.setBounds(20, 48, 100, 25);
@@ -53,15 +51,11 @@ public class VentanaConsultaIndividual extends JDialog implements ActionListener
 		btnConsulta.setBounds(290, 48, 90, 28);
 		btnConsulta.addActionListener(this);
 		getContentPane().add(btnConsulta);
-
-		// Campos de información (agrupados para claridad)
 		
 		agregarCampo("Nombre:", 88, txtNombre = new JTextField(), 250);
 		agregarCampo("Edad:", 126, txtEdad = new JTextField(), 80);
 		agregarCampo("Peso (kg):", 164, txtPeso = new JTextField(), 80);
 		agregarCampo("Estatura (m):", 202, txtEstatura = new JTextField(), 80);
-
-		// Campos de solo lectura
 		
 		agregarCampo("IMC:", 240, txtImc = new JTextField(), 80);
 		txtImc.setEditable(false);
@@ -70,8 +64,6 @@ public class VentanaConsultaIndividual extends JDialog implements ActionListener
 		agregarCampo("Clasificación:", 278, txtClasificacion = new JTextField(), 150);
 		txtClasificacion.setEditable(false);
 		txtClasificacion.setBackground(new Color(240, 240, 240));
-
-		// Acciones
 		
 		btnActualizar = new JButton("Actualizar");
 		btnActualizar.setBounds(20, 325, 150, 30);
@@ -83,8 +75,6 @@ public class VentanaConsultaIndividual extends JDialog implements ActionListener
 		btnEliminar.addActionListener(this);
 		getContentPane().add(btnEliminar);
 	}
-
-	// Método auxiliar para no repetir código de etiquetas y campos
 	
 	private void agregarCampo(String label, int y, JTextField field, int width) {
 		JLabel lbl = new JLabel(label);
