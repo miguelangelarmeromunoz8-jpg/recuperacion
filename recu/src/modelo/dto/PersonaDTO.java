@@ -1,8 +1,6 @@
 package modelo.dto;
 
 public class PersonaDTO {
-
-	// Atributos que representan los datos de la persona
 	
 	private String documento;
 	private String nombre;
@@ -14,8 +12,6 @@ public class PersonaDTO {
 
 	public PersonaDTO() {
 	}
-
-	// Constructor para inicializar todos los campos a la vez
 	
 	public PersonaDTO(String documento, String nombre, int edad, double peso, double estatura, double imc,
 			String clasificacion) {
@@ -27,8 +23,6 @@ public class PersonaDTO {
 		this.imc = imc;
 		this.clasificacion = clasificacion;
 	}
-
-	// Métodos Getter y Setter
 	
 	public String getDocumento() {
 		return documento;
