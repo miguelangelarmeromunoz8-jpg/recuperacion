@@ -36,7 +36,6 @@ public class VentanaConsultarLista extends JDialog implements ActionListener {
 	}
 
 	public void consultarListaPersonas() {
-		// Verificación de seguridad para evitar el error rojo
 		if (coordinador == null)
 			return;
 
@@ -89,6 +88,5 @@ public class VentanaConsultarLista extends JDialog implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// Espacio para eventos futuros
 	}
 }
